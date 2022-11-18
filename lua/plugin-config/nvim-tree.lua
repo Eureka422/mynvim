@@ -8,15 +8,14 @@ vim.g.loaded_netrwPlugin = 1
 
 vim.opt.termguicolors = true
 
-vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FFFFF ]])
 
 nvimtree.setup({
   renderer = {
     icons = {
       glyphs = {
         folder = {
-          arrow_closed = ">",
-          arrow_open = "<", 
+          arrow_closed = "",
+          arrow_open = "", 
         }
       },
     },
