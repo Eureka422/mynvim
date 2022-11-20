@@ -18,11 +18,19 @@ return require('packer').startup(function(use)
   use("jiangmiao/auto-pairs")
 
   -- fuzzy find
-  use("nvim-telescope/telescope.nvim")
+  use{ 
+  "nvim-telescope/telescope.nvim",
+  requires = {
+    "nvim-lua/plenary.nvim"
+  }
+}
   use{"nvim-telescope/telescope-fzf-native.nvim",run="make",}
   -- use("nvim-telescope/")
 
   -- -- auto complete
+  use("neovim/nvim-lspconfig")
+  use("williamboman/mason.nvim")
+  use("williamboman/mason-lspconfig.nvim")
   use("hrsh7th/nvim-cmp")  
   use("hrsh7th/cmp-buffer")   -- complete based on current file
   use("hrsh7th/cmp-path")     -- complete file path
