@@ -1,5 +1,4 @@
 vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
     
@@ -27,10 +26,7 @@ return require('packer').startup(function(use)
   use{"nvim-telescope/telescope-fzf-native.nvim",run="make",}
   -- use("nvim-telescope/")
 
-  -- -- auto complete
-  use("neovim/nvim-lspconfig")
-  use("williamboman/mason.nvim")
-  use("williamboman/mason-lspconfig.nvim")
+  -- auto complete
   use("hrsh7th/nvim-cmp")  
   use("hrsh7th/cmp-buffer")   -- complete based on current file
   use("hrsh7th/cmp-path")     -- complete file path
@@ -38,4 +34,15 @@ return require('packer').startup(function(use)
   use("hrsh7th/cmp-nvim-lsp")
   use("f3fora/cmp-spell")     -- complete english word
 
+  -- snippets
+  use("L3MON4D3/LuaSnip")
+  use("saadparwaiz1/cmp_luasnip")
+  use("rafamadriz/friendly-snippets")
+
+  use("neovim/nvim-lspconfig")
+  use("williamboman/mason.nvim")
+  use("williamboman/mason-lspconfig.nvim")
+  use({ "glepnir/lspsaga.nvim", branch = "main" }) 
+  use("jose-elias-alvarez/typescript.nvim")
+  use("onsails/lspkind.nvim")
 end)
