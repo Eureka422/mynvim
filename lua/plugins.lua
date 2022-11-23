@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
   use("tpope/vim-surround")
   use("vim-scripts/ReplaceWithRegister")
   use("numToStr/Comment.nvim")    -- commenting with "gc"
-  use("jiangmiao/auto-pairs")
+  use("windwp/nvim-autopairs")
 
   -- fuzzy find
   use{ 
