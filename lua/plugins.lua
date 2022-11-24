@@ -12,7 +12,7 @@ return require('packer').startup(function(use)
   
   --useful tool
   use("tpope/vim-surround")
-  use("vim-scripts/ReplaceWithRegister")
+  -- use("vim-scripts/ReplaceWithRegister")
   use("numToStr/Comment.nvim")    -- commenting with "gc"
   use("windwp/nvim-autopairs")
 
@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
   use("hrsh7th/cmp-path")     -- complete file path
   use("hrsh7th/cmp-cmdline")  
   use("hrsh7th/cmp-nvim-lsp")
-  use("f3fora/cmp-spell")     -- complete english word
+  -- use("f3fora/cmp-spell")     -- complete english word
 
   -- snippets
   use("L3MON4D3/LuaSnip")
@@ -43,6 +43,6 @@ return require('packer').startup(function(use)
   use("williamboman/mason.nvim")
   use("williamboman/mason-lspconfig.nvim")
   use({ "glepnir/lspsaga.nvim", branch = "main" }) 
-  use("jose-elias-alvarez/typescript.nvim")
+  -- use("jose-elias-alvarez/typescript.nvim")
   use("onsails/lspkind.nvim")
 end)
